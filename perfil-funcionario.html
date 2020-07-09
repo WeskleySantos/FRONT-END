@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="assets/demo.css">
+    <link rel="stylesheet" href="assets/navigation-dark.css">
+    <link rel="stylesheet" href="assets/slicknav/slicknav.min.css">
+
+    <script src="https://kit.fontawesome.com/6a61f7bd46.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <nav class="menu-navigation-dark">
+        <a href="perfil-funcionario.html" class="selected"><i class="fa fa-user" aria-hidden="true"></i><span>Perfil</span></a>
+        <a href="cadastrar.html"><i class="fas fa-motorcycle"></i></i><span>Veículo</span></a>
+        <a href="listar-veiculos.html"><i class="fas fa-car"></i><span>Estacionamento</span></a>
+        <a href="index.html"><i class="fa fa-sign-out" aria-hidden="true"></i><span>Sair</span></a>
+    </nav>
+    
+    <div class="card">
+      <div class="thumbnail"><img class="left" src="./assets/images/carro.jpg"/></div>
+      <div class="right">
+        <h1>Igor Meneses Junior</h1>
+        <div class="author"><img src="https://randomuser.me/api/portraits/men/95.jpg"/>
+          <h2>Igor</h2>
+        </div>
+        <div class="separator"></div>
+        <p>O primeiro meio de transporte a fazer uso de um motor a gasolina para se locomover foi um automóvel que continha somente três rodas e foi criado no ano de 1885 por um alemão de nome Karl Benz.
+
+            Com o passar do tempo foram sendo idealizados outros exemplares, muitos deles com o que era chamado na época de “motor de dois tempos”, idealizado em 1884 por Gottlieb Daimbler. </p>
+      </div>
+      <h5>12</h5>
+      <h6>AGOSTO</h6>
+      <ul>
+        <li><i class="fa fa-eye fa-2x"></i></li>
+        <li><i class="fa fa-heart-o fa-2x"></i></li>
+        <li><i class="fa fa-envelope-o fa-2x"></i></li>
+        <li><i class="fa fa-share-alt fa-2x"></i></li>
+      </ul>
+      
+    </div>
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="assets/slicknav/jquery.slicknav.min.js"></script>
+
+<script>
+
+    $(function(){
+
+        var menu = $('.menu-navigation-dark');
+
+        menu.slicknav();
+
+        // Mark the clicked item as selected
+
+        menu.on('click', 'a', function(){
+            var a = $(this);
+
+            a.siblings().removeClass('selected');
+            a.addClass('selected');
+        });
+    });
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="assets/demo.css">
+    <link rel="stylesheet" href="assets/navigation-dark.css">
+    <link rel="stylesheet" href="assets/slicknav/slicknav.min.css">
+
+    <script src="https://kit.fontawesome.com/6a61f7bd46.js" crossorigin="anonymous"></script>
+
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/css/util.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+<!--===============================================================================================-->
+</head>
+
+<body>
+
+<nav class="menu-navigation-dark">
+    <a href="perfil-funcionario.html" ><i class="fa fa-user" aria-hidden="true"></i><span>Perfil</span></a>
+    <a href="cadastrar.html"><i class="fas fa-motorcycle"></i></i><span>Veículo</span></a>
+    <a href="listar-veiculos.html" class="selected"><i class="fas fa-car"></i><span>Estacionamento</span></a>
+    <a href="index.html"><i class="fa fa-sign-out" aria-hidden="true"></i><span>Sair</span></a>
+</nav>
+
+
+<div class="limiter">
+  <div class="container-table100">
+    <div class="wrap-table100">
+      <div class="table100 ver1">
+        <div class="table100-firstcol">
+          <table>
+            <thead>
+              <tr class="row100 head">
+                <th class="cell100 column1">Nomes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="row100 body">
+                <td class="cell100 column1">Weskley</td>
+              </tr>
+
+              <tr class="row100 body">
+                <td class="cell100 column1">Fabio</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="wrap-table100-nextcols js-pscroll">
+          <div class="table100-nextcols">
+            <table>
+              <thead>
+                <tr class="row100 head">
+                  <th class="cell100 column2">Modelo</th>
+                  <th class="cell100 column3">Placa</th>
+                  <th class="cell100 column4">Documento</th>
+                  <th class="cell100 column8">Hora Entrada</th>
+                  <th class="cell100 column8">Finalizar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="row100 body">
+                  <td class="cell100 column2">Corsa</td>
+                  <td class="cell100 column3">ABC - 1234</td>
+                  <td class="cell100 column4">12345678</td>
+                  <td class="cell100 column4">10:00h</td>
+                  <td class="cell100 column5"><button><i class="fas fa-check-circle"></i></button></td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column2">Biz</td>
+                  <td class="cell100 column3">ABC - 1234</td>
+                  <td class="cell100 column4">123456789</td>
+                  <td class="cell100 column4">10:00h</td>
+                  <td class="cell100 column5"><button><i class="fas fa-check-circle"></i></button></td>
+                </tr>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--===============================================================================================-->	
+<script src="assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+<script src="assets/vendor/bootstrap/js/popper.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+<script src="assets/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+<script src="assets/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+   
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="assets/assets/slicknav/jquery.slicknav.min.js"></script>
+
+<script>
+
+    $(function(){
+
+        var menu = $('.menu-navigation-dark');
+
+        menu.slicknav();
+
+        // Mark the clicked item as selected
+
+        menu.on('click', 'a', function(){
+            var a = $(this);
+
+            a.siblings().removeClass('selected');
+            a.addClass('selected');
+        });
+    });
+
+</script>
+
+</body>
+
+</html>
